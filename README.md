@@ -1,10 +1,27 @@
-![1_gBkMCGTAdSk4tu17SCa7RQ](https://user-images.githubusercontent.com/89368363/176786538-27922c0e-ca8d-44a8-8586-4c0d4b768dca.png)
-# Leetcode-Problems
-## This is a repository of Leetcode problems. I copied problems and included solutions with comments explaining my logic.
+# Practice: Unit Testing with Mocha and Chai
 
+In this practice, you will create unit tests with the `mocha` testing library
+and the `chai` assertion library.
 
-## If you are interested in solving problems, please run npm install at the root directory first.
+## Set up
 
-## The problems are listed in the 'problems' directory.
+Clone the starter from the **Download** link at the bottom of this page.
 
-## If you are interested in viewing my solutions, they are located in the 'solutions' directory.
+Run `npm install` to download dependencies.
+
+## Instructions
+
+1. In the file **funcs.js**, you will find three skeleton functions. Your job is
+   to complete those functions according to the specs found in
+   **test/funcs-spec.js**.
+2. In the file **class.js**, you will find a class `Word`. Your job is to write
+   the test code in **test/class-spec.js** to test the constructor, its
+   variables, and the instance methods found in the `Word` class.
+
+Run `npm test` to confirm your code is written correctly.
+
+### Helpful links
+
+[Mocha Documentation](https://mochajs.org/)
+[Chai Documentation](https://www.chaijs.com/)
+[MDN Documentation](https://developer.mozilla.org/en-US/)
