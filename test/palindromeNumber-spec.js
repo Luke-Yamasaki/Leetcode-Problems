@@ -3,7 +3,7 @@ const expect = chai.expect;
 const { palindromeNumber } = require("../solutions/easy/palindromeNumber");
 
 describe("palindromeNumber(x)", () => {
-  it("should return indices of the two numbers in an array such that they add up to target. You can return the indecies in any order.", () => {
+  it("should return true if x is a palindrome integer.", () => {
     const x = 121;
     const y = -121;
     const z = 10;
