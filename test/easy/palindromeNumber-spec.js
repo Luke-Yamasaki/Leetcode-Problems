@@ -1,6 +1,6 @@
 const chai = require("chai");
 const expect = chai.expect;
-const { palindromeNumber } = require("../solutions/easy/palindromeNumber");
+const { palindromeNumber } = require("../../solutions/easy/palindromeNumber");
 
 describe("palindromeNumber(x)", () => {
   it("should return true if x is a palindrome integer.", () => {

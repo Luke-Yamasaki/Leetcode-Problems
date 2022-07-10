@@ -1,6 +1,6 @@
 const chai = require("chai");
 const expect = chai.expect;
-const { twoSum } = require("../solutions/easy/twoSum");
+const { twoSum } = require("../../solutions/easy/twoSum");
 
 describe("twoSum(nums, target)", () => {
   it("should return indices of the two numbers in an array such that they add up to target. You can return the indecies in any order.", () => {

@@ -1,6 +1,6 @@
 const chai = require("chai");
 const expect = chai.expect;
-const { romanToInteger } = require("../solutions/easy/romanToInteger");
+const { romanToInteger } = require("../../solutions/easy/romanToInteger");
 
 describe("romanToInteger(s)", () => {
   it("should convert the Roman numeral to an integer and return the number.", () => {
