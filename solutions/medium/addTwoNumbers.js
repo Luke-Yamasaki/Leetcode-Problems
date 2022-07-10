@@ -1,13 +1,11 @@
 const addTwoNumbers = (l1, l2) => {
-    let resultArray;
-    for(let i = 0; i < nums.length - 1; i++) {
-        for(let j = i+1; j < nums.length; j++) {
-            if(nums[i] + nums[j] === target) {
-                resultArray = [i, j];
-            }
-        }
-    }
-    return resultArray;
+    if(l1 === [0] && l2 === [0]) return [0];
+
+    const str1 = l1.reverse().join('');
+    const str2 = l2.reverse().join('');
+    const total = parseInt(str1) + parseInt(str2);
+
+    return total.split('').reverse();
 }
 
 module.exports = { addTwoNumbers };
