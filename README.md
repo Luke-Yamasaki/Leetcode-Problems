@@ -1,24 +1,15 @@
-# Practice: Unit Testing with Mocha and Chai
+# This is a JavaScript repository of LeetCode problems with my solutions.
 
-In this practice, you will create unit tests with the `mocha` testing library
-and the `chai` assertion library.
+## I created unit tests with mocha and chai to demonstrate the coding aspect of Test Driven Development.
 
-## Set up
+## If you are interested in cloning this repository and writing your own solutions, please run npm install at the root level.
+## There are markdown files with problems in the 'problems' directory.
 
-Clone the starter from the **Download** link at the bottom of this page.
+## After reading a problem of your choice, please navigate to the 'your code' directroy and find the corresponding problem file.
+## After entering your solution, please run 'npm test' in the command line to view your test results.
+## If you would like to tweak the test files, please navigate to the 'test' directory and find the corresponding file.
+## The tests are written with Mocha and the Chai assertion library. If you are unsure of the testing syntax, there are helpful links attached below.
 
-Run `npm install` to download dependencies.
-
-## Instructions
-
-1. In the file **funcs.js**, you will find three skeleton functions. Your job is
-   to complete those functions according to the specs found in
-   **test/funcs-spec.js**.
-2. In the file **class.js**, you will find a class `Word`. Your job is to write
-   the test code in **test/class-spec.js** to test the constructor, its
-   variables, and the instance methods found in the `Word` class.
-
-Run `npm test` to confirm your code is written correctly.
 
 ### Helpful links
 
