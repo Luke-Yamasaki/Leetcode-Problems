@@ -1,11 +1,43 @@
+class ListNode {
+    constructor(val) {
+        this.val = val
+        this.next = null
+    }
+}
+
+class LinkedList {
+    constructor() {
+        this.head = null
+    }
+}
+
 const addTwoNumbers = (l1, l2) => {
-    if(l1 === [0] && l2 === [0]) return [0];
+   let sum = 0;
+   let current = new ListNode(0);
+   let result = current;
 
-    const str1 = l1.reverse().join('');
-    const str2 = l2.reverse().join('');
-    const total = parseInt(str1) + parseInt(str2);
+   while(l1 || l2) {
+    if(l1) {
+        sum += l1.val;
+        l1 = l1.next;
+    }
 
-    return total.split('').reverse();
+    if(l2) {
+        sum += l2.val;
+        l2 = l2.next;
+    }
+
+    current.next = new ListNode(sum % 10);
+    current = current.next;
+
+    sum = sum > 9 ? 1 : 0;
+   }
+
+   if(sum) {
+    current.next = new ListNode(sum);
+   }
+
+   return result.next;
 }
 
 module.exports = { addTwoNumbers };

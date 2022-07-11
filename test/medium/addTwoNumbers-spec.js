@@ -13,12 +13,12 @@ describe("addTwoNumbers(l1, l2)", () => {
     }
 
     class LinkedList {
-      constructor(head = null) {
+      constructor() {
         this.head = null
       }
     }
 
-    // Test1
+    // Arguments 1
     const node1 = new ListNode(2);
     const node2 = new ListNode(4);
     const node3 = new ListNode(3);
@@ -35,13 +35,13 @@ describe("addTwoNumbers(l1, l2)", () => {
 
     let linkedList2 = new LinkedList(node4)
 
-    // Test2
+    // Arguments 2
     const node7 = new ListNode(0);
     const node8 = new ListNode(0);
     const linkedList3 = new LinkedList(node7);
     const linkedList4 = new LinkedList(node8);
 
-    // Test3
+    // Arguments 3
     const node9 = new ListNode(9);
     const node10 = new ListNode(9);
     const node11 = new ListNode(9);
@@ -68,13 +68,44 @@ describe("addTwoNumbers(l1, l2)", () => {
 
     const linkedList6 = new LinkedList(node16);
 
-
     const actual1 = addTwoNumbers(linkedList1, linkedList2);
     const actual2 = addTwoNumbers(linkedList3, linkedList4);
     const actual3 = addTwoNumbers(linkedList5, linkedList6);
 
-    expect(actual1).to.equal(true);
-    expect(actual2).to.equal(false);
-    expect(actual3).to.equal(false);
+    // Test 1
+    const testNode1 = new ListNode(7);
+    const testNode2 = new ListNode(0);
+    const testNode3 = new ListNode(8);
+    testNode1.next = testNode2;
+    testNode2.next = testNode3;
+    const testList1 = new LinkedList(testNode1);
+
+    // Test 2
+    const testNode4 = new ListNode(0);
+    const testList2 = new LinkedList(testNode4);
+
+    // Test 3
+    const testNode5 = new ListNode(8);
+    const testNode6 = new ListNode(9);
+    const testNode7 = new ListNode(9);
+    const testNode8 = new ListNode(9);
+    const testNode9 = new ListNode(0);
+    const testNode10 = new ListNode(0);
+    const testNode11 = new ListNode(0);
+    const testNode12 = new ListNode(1);
+    testNode5.next = testNode6;
+    testNode6.next = testNode7;
+    testNode7.next = testNode8;
+    testNode8.next = testNode9;
+    testNode9.next = testNode10;
+    testNode10.next = testNode11;
+    testNode11.next = testNode12;
+
+    const testList3 = new LinkedList(testNode5);
+
+    // Results
+    expect(actual1).to.deep.equal(testList1);
+    expect(actual2).to.deep.equal(testList2);
+    expect(actual3).to.deep.equal(testList3);
   });
 });
